@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLBanHang" Class="QLVTDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7P62KP4;Initial Catalog=QLBanHang;Integrated Security=True" SettingsObjectName="QuanLyBanHang.Properties.Settings" SettingsPropertyName="QLBanHangConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VATTU" Member="VATTUs">
+    <Type Name="VATTU">
+      <Column Name="Mavtu" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenVTu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Dvtinh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Phantram" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Association Name="VATTU_TONKHO" Member="TONKHOs" ThisKey="Mavtu" OtherKey="Mavtu" Type="TONKHO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHACC" Member="NHACCs">
+    <Type Name="NHACC">
+      <Column Name="MaNCC" Type="System.String" DbType="Char(3) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenNCC" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Diachi" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Dienthoai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="NHACC_DONDH" Member="DONDHs" ThisKey="MaNCC" OtherKey="MaNCC" Type="DONDH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TONKHO" Member="TONKHOs">
+    <Type Name="TONKHO">
+      <Column Name="NamThang" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Mavtu" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SLDau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TongSLN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TongSLX" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SLCuoi" Type="System.Int32" DbType="Int" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="VATTU_TONKHO" Member="VATTU" ThisKey="Mavtu" OtherKey="Mavtu" Type="VATTU" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONDH" Member="DONDHs">
+    <Type Name="DONDH">
+      <Column Name="SoDH" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayDH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MaNCC" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Association Name="NHACC_DONDH" Member="NHACC" ThisKey="MaNCC" OtherKey="MaNCC" Type="NHACC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PNHAP" Member="PNHAPs">
+    <Type Name="PNHAP">
+      <Column Name="SoPn" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SoDH" Type="System.String" DbType="Char(4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PXUAT" Member="PXUATs">
+    <Type Name="PXUAT">
+      <Column Name="SoPx" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayXuat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

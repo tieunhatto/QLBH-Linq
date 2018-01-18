@@ -1,0 +1,17 @@
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\bin\Debug\DevComponents.DotNetBar2.dll
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\bin\Debug\DevComponents.DotNetBar2.xml
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmQuanLyVatTu.resources
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmNhaCC.resources
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDonDH.resources
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmPNhap.resources
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmPXuat.resources
+E:\Winform C#\QuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmMain.resources

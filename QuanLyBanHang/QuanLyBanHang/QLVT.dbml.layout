@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QLVT">
+  <DataContextMoniker Name="/QLVTDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0a77a478-e8cf-4b5e-958a-a8fac592f2db" absoluteBounds="4.625, 0.875, 2.125, 1.5785953776041666">
+      <DataClassMoniker Name="/QLVTDataContext/VATTU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1e34038-af46-4a28-9e2f-ad57fd9a934e" absoluteBounds="4.64, 1.335, 2.0949999999999998, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c92a7591-8e27-4395-bd0e-2a6d5051bd36" absoluteBounds="6.875, 3.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLVTDataContext/NHACC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c18f6af8-e078-4c16-af0e-a4915a1378d0" absoluteBounds="6.89, 3.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e454e358-29e9-4d2d-8afc-a79e1b2c2128" absoluteBounds="3.125, 3.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/QLVTDataContext/TONKHO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d772c633-600d-4546-b0a5-932b795b5883" absoluteBounds="3.14, 3.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.875 : 2.45359537760417); (4.875 : 3.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLVTDataContext/VATTU/VATTU_TONKHO" />
+      <nodes>
+        <classShapeMoniker Id="0a77a478-e8cf-4b5e-958a-a8fac592f2db" />
+        <classShapeMoniker Id="e454e358-29e9-4d2d-8afc-a79e1b2c2128" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a0eb79de-d87d-478a-a912-6cd469e96f5b" absoluteBounds="7.5, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QLVTDataContext/DONDH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a99c81bb-bcba-474a-a605-d5bcb3368cf0" absoluteBounds="7.5150000000000006, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.1875 : 3.125); (8.1875 : 2.1362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLVTDataContext/NHACC/NHACC_DONDH" />
+      <nodes>
+        <classShapeMoniker Id="c92a7591-8e27-4395-bd0e-2a6d5051bd36" />
+        <classShapeMoniker Id="a0eb79de-d87d-478a-a912-6cd469e96f5b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="14ca9430-9b62-4b66-a440-1ba34a00fc1b" absoluteBounds="0.75, 3.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QLVTDataContext/PNHAP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="891f3055-31a5-49cb-8322-e984da271abc" absoluteBounds="0.76499999999999968, 3.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3df7f55-bb30-488b-b170-ecc6db169cd0" absoluteBounds="0.625, 0.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QLVTDataContext/PXUAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df32e544-6c92-4a9f-946e-df32a5e2ce4f" absoluteBounds="0.64000000000000012, 1.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
